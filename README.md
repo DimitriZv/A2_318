@@ -10,9 +10,9 @@ curl -v -X POST localhost:8080/contacts -H 'Content-Type:application/json' -d '{
 ```
 ## update:
 ```bash
-## curl -X PUT localhost:8080/contacts/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
+curl -X PUT localhost:8080/contacts/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
 ```
 ## delete:
 ```bash
-## curl -X DELETE localhost:8080/contacts/3
+curl -X DELETE localhost:8080/contacts/3
 ```
