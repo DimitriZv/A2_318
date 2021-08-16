@@ -15,8 +15,8 @@ class LoadDatabase {
     CommandLineRunner initDatabase(ContactRepository contactRepository) {
 
         return args -> {
-            contactRepository.save(new Contact("Bilbo", "Baggins", "bil@bibl.bil", "burglar"));
-            contactRepository.save(new Contact("Frodo", "Baggins", "frod@frod.fr", "thief"));
+            contactRepository.save(new Contact("Bilbo", "Baggins", "123456987", "bil@bibl.bil", "burglar"));
+            contactRepository.save(new Contact("Frodo", "Baggins", "236589956","frod@frod.fr", "thief"));
 
             contactRepository.findAll().forEach(contact -> log.info("Preloaded " + contact));
         };

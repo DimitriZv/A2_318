@@ -65,6 +65,7 @@ class ContactController {
         Contact updatedContact = repository.findById(id) //
                 .map(contact -> {
                     contact.setName(newContact.getName());
+                    contact.setPhone(newContact.getPhone());
                     contact.setPosition(newContact.getPosition());
                     contact.setEmail(newContact.getEmail());
                     return repository.save(contact);
