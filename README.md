@@ -1,8 +1,8 @@
-# Create/update customer contact
+## Create/update customer contact
 
-# Demonstration: Sample REST Requests
+## Demonstration: Sample REST Requests
 
-## Show all contacts from Seed Data:
+Show all contacts from Seed Data:
 http://localhost:8080/contacts/
 ```bash
 {
