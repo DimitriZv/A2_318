@@ -54,7 +54,7 @@ http://localhost:8080/contacts/
 ```bash
 curl -v -X POST localhost:8080/contacts -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "email": "sam@sam.sm", "position": "gardener"}'
 ```
-## which returns
+which returns
 ```bash
 {
   "id": 3,
@@ -78,7 +78,7 @@ curl -v -X POST localhost:8080/contacts -H 'Content-Type:application/json' -d '{
 ```bash
 curl -X PUT localhost:8080/contacts/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
 ```
-## which returns
+which returns
 ```bash
 {
   "id": 3,
@@ -107,7 +107,7 @@ http://localhost:8080/contacts/2
 
 http://localhost:8080/contacts/
 ```
-## which returns
+which returns
 ```bash
 No body return for response
 Could not find contact 2
