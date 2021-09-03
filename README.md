@@ -74,7 +74,7 @@ which returns
 }
 ```
 
-## update a contact:
+## update a product detail:
 ```bash
 curl -X PUT localhost:8080/details/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
 ```
@@ -98,7 +98,7 @@ which returns
 }
 ```
 
-## delete a contact:
+## delete a product detail:
 ```bash
 curl -X DELETE localhost:8080/details/3
 http://localhost:8080/contacts/3
