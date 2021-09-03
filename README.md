@@ -1,9 +1,9 @@
-## Create/update customer contact
+## Create/update/delete Product Detail
 
 ## Demonstration: Sample REST Requests
 
 Show all contacts from Seed Data:
-http://localhost:8080/contacts/
+http://localhost:8080/details/
 ```bash
 {
   "_embedded": {
@@ -50,9 +50,9 @@ http://localhost:8080/contacts/
 }
 ```
 
-## create a new contact:
+## create a new product detail:
 ```bash
-curl -v -X POST localhost:8080/contacts -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "email": "sam@sam.sm", "position": "gardener"}'
+curl -v -X POST localhost:8080/details -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "email": "sam@sam.sm", "position": "gardener"}'
 ```
 which returns
 ```bash
@@ -76,7 +76,7 @@ which returns
 
 ## update a contact:
 ```bash
-curl -X PUT localhost:8080/contacts/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
+curl -X PUT localhost:8080/details/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
 ```
 which returns
 ```bash
@@ -100,12 +100,12 @@ which returns
 
 ## delete a contact:
 ```bash
-curl -X DELETE localhost:8080/contacts/3
+curl -X DELETE localhost:8080/details/3
 http://localhost:8080/contacts/3
-curl -X DELETE localhost:8080/contacts/2
-http://localhost:8080/contacts/2
+curl -X DELETE localhost:8080/details/2
+http://localhost:8080/details/2
 
-http://localhost:8080/contacts/
+http://localhost:8080/details/
 ```
 which returns
 ```bash
@@ -126,10 +126,10 @@ Could not find contact 3
         "name": "Bilbo Baggins",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/contacts/1"
+            "href": "http://localhost:8080/details/1"
           },
           "contacts": {
-            "href": "http://localhost:8080/contacts"
+            "href": "http://localhost:8080/details"
           }
         }
       }
@@ -137,7 +137,7 @@ Could not find contact 3
   },
   "_links": {
     "self": {
-      "href": "http://localhost:8080/contacts"
+      "href": "http://localhost:8080/details"
     }
   }
 }
