@@ -1,12 +1,12 @@
-package contact;
+package detail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContactApplication {
+public class ProductDetailApplication {
 
     public static void main(String... args) {
-        SpringApplication.run(ContactApplication.class, args);
+        SpringApplication.run(ProductDetailApplication.class, args);
     }
 }

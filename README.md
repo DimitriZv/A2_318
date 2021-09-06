@@ -1,4 +1,4 @@
-## Create/update customer contact
+## Create/update customer productDetail
 
 ## Demonstration: Sample REST Requests
 
@@ -50,7 +50,7 @@ http://localhost:8080/contacts/
 }
 ```
 
-## create a new contact:
+## create a new productDetail:
 ```bash
 curl -v -X POST localhost:8080/contacts -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "email": "sam@sam.sm", "position": "gardener"}'
 ```
@@ -74,7 +74,7 @@ which returns
 }
 ```
 
-## update a contact:
+## update a productDetail:
 ```bash
 curl -X PUT localhost:8080/contacts/3 -H 'Content-type:application/json' -d '{"name": "Updated Contact", "email": "new@email.new", "position": "New Potistion"}'
 ```
@@ -98,7 +98,7 @@ which returns
 }
 ```
 
-## delete a contact:
+## delete a productDetail:
 ```bash
 curl -X DELETE localhost:8080/contacts/3
 http://localhost:8080/contacts/3
@@ -110,9 +110,9 @@ http://localhost:8080/contacts/
 which returns
 ```bash
 No body return for response
-Could not find contact 2
+Could not find productDetail 2
 No body return for response
-Could not find contact 3
+Could not find productDetail 3
 
 {
   "_embedded": {
