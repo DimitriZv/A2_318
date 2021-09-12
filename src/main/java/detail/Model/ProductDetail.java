@@ -1,4 +1,4 @@
-package detail;
+package detail.Model;
 
 import java.util.Objects;
 
@@ -7,13 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class ProductDetail {
+public class ProductDetail {
 
     private @Id @GeneratedValue Long id;
     private String description;
     private String comment;
 
-    ProductDetail() {}
+    public ProductDetail() {}
 
     public ProductDetail(String description, String comment) {
         this.description = description;
